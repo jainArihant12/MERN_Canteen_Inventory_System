@@ -16,7 +16,7 @@ export const addOrder = createAsyncThunk(
     
       
       const response = await axios.post(
-        `http://localhost:5000/api/shop/order/add`,
+        `${import.meta.env.VITE_Backend_API_URL}/api/shop/order/add`,
         orderList
       );
       
@@ -31,7 +31,7 @@ export const fetchAllOrder = createAsyncThunk(
   'order/fetchOrder',
   async (userId, thunkAPI) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/shop/order/get/${userId}`);
+      const response = await axios.get(`${import.meta.env.VITE_Backend_API_URL}/api/shop/order/get/${userId}`);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response?.data?.message || error.message);

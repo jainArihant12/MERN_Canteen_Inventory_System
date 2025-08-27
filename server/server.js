@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 5000
 //a webpage from one origin can make requests to another origin.
 
 app.use(cors({                                          // It's okay, allow cross-origin requests to this server.
-    origin: ' http://localhost:5173',
+    origin: process.env.FRONTEND_URL,
     methods: ['GET', 'POST', 'DELETE', 'PUT'],
     allowedHeaders: [
         "Content-Type",
