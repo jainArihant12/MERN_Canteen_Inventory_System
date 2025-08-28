@@ -23,17 +23,23 @@ const PORT = process.env.PORT || 5000
 //Cross-Origin Resource Sharing 
 //a webpage from one origin can make requests to another origin.
 
-app.use(cors({                                          // It's okay, allow cross-origin requests to this server.
-    origin: process.env.FRONTEND_URL,
-    methods: ['GET', 'POST', 'DELETE', 'PUT'],
-    allowedHeaders: [
-        "Content-Type",
-        "Authorization",
-        "Cache-Control",
-        "Pragma"
-    ],
-    credentials: true
-}))
+const allowedOrigins = (process.env.FRONTEND_URL || "").split(",").map(o => o.trim()).filter(o => o);
+
+app.use(cors({
+  origin: function(origin, callback) {
+    if (!origin) return callback(null, true); // allow server/Postman requests
+    if (allowedOrigins.includes(origin)) {
+      callback(null, origin); // allow request
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET","POST","PUT","DELETE","OPTIONS"],
+  allowedHeaders: ["Content-Type","Authorization","Cache-Control","Pragma"],
+  credentials: true
+}));
+
+
 
 app.use(cookieParser());
 app.use(express.json());
