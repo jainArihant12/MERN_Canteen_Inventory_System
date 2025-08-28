@@ -6,7 +6,7 @@ export const fetchAllOrdersAdmin = createAsyncThunk(
   'adminOrder/fetchAllOrdersAdmin',
   async (_, thunkAPI) => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_Backend_API_URL}/api/admin/order/fetch`);
+      const response = await axios.get(`${import.meta.env.VITE_BACKEND_API_URL}/api/admin/order/fetch`);
       return response.data.orders;  // assuming backend sends { success, orders }
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response?.data?.message || error.message);
@@ -20,7 +20,7 @@ export const updateOrderStatus = createAsyncThunk(
   async ({ orderId, status }, thunkAPI) => {
     try {  
       const response = await axios.put(
-        `${import.meta.env.VITE_Backend_API_URL}/api/admin/order/${orderId}/status`,
+        `${import.meta.env.VITE_BACKEND_API_URL}/api/admin/order/${orderId}/status`,
         { status }
       );
       return response.data.order;  // updated order

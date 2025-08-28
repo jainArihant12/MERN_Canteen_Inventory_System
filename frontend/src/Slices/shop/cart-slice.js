@@ -9,24 +9,24 @@ const initialState = {
 
 export const addToCart = createAsyncThunk('/cart/add', async ({ userId, productId, quantity }) => {
 
-  const response = await axios.post(`${import.meta.env.VITE_Backend_API_URL}/api/shop/cart/addtocart`, { userId, productId, quantity });
+  const response = await axios.post(`${import.meta.env.VITE_BACKEND_API_URL}/api/shop/cart/addtocart`, { userId, productId, quantity });
   return response?.data || [];
 
 });
 
 export const fetchCartItems = createAsyncThunk('/cart/fetch', async (userId) => {
-  const response = await axios.get(`${import.meta.env.VITE_Backend_API_URL}/api/shop/cart/get/${userId}`);
+  const response = await axios.get(`${import.meta.env.VITE_BACKEND_API_URL}/api/shop/cart/get/${userId}`);
   return response.data || [];
 });
 
 export const updateCart = createAsyncThunk('/cart/update', async ({ userId, productId, quantity }) => {
-  const response = await axios.put(`${import.meta.env.VITE_Backend_API_URL}/api/shop/cart/updateCart`, { userId, productId, quantity });
+  const response = await axios.put(`${import.meta.env.VITE_BACKEND_API_URL}/api/shop/cart/updateCart`, { userId, productId, quantity });
   return response?.data || [];
 });
 
 export const deleteCart = createAsyncThunk('/cart/delete', async ({ userId, productId }) => {
 
-  const response = await axios.delete(`${import.meta.env.VITE_Backend_API_URL}/api/shop/cart/deleteCart/${userId}/${productId}`);
+  const response = await axios.delete(`${import.meta.env.VITE_BACKEND_API_URL}/api/shop/cart/deleteCart/${userId}/${productId}`);
 
   return response?.data || [];
 });
@@ -36,7 +36,7 @@ export const clearCart = createAsyncThunk(
   async (userId, thunkAPI) => {
     
     try {
-      const response = await axios.delete(`${import.meta.env.VITE_Backend_API_URL}/api/shop/cart/cartClear/${userId}`);
+      const response = await axios.delete(`${import.meta.env.VITE_BACKEND_API_URL}/api/shop/cart/cartClear/${userId}`);
       console.log(response);
       return response.data;
          
