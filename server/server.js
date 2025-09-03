@@ -24,6 +24,7 @@ const PORT = process.env.PORT || 5000
 //a webpage from one origin can make requests to another origin.
 
 const allowedOrigins = (process.env.FRONTEND_URL || "").split(",").map(o => o.trim()).filter(o => o);
+console.log("Allowed Origins:", allowedOrigins);
 
 app.use(cors({
   origin: function(origin, callback) {

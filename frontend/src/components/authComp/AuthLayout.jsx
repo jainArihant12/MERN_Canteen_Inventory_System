@@ -7,7 +7,7 @@ const AuthLayout = () => {
 
   <div className='w-full md:w-1/2 flex justify-center items-center bg-black p-4 '>
     <h1 className='text-3xl md:text-4xl text-white text-center'>
-      Welcome to Ecommerce Shopping
+      Welcome to Canteen
     </h1>
   </div>
 
