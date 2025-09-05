@@ -7,6 +7,11 @@ It allows admins to manage products and users to place orders efficiently.
 ## Screenshots
  ![HomepageUser](Screenshots/User_Front_Page.png)
 
+ For full website Screenshots , [Visit Here](Screenshots/Readme.md)
+
+## Video
+
+
 ## Features
 - User Authentication (Sign up / Login)
 - Admin Panel
