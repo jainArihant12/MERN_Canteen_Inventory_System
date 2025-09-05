@@ -7,7 +7,7 @@ It allows admins to manage products and users to place orders efficiently.
 ## Screenshots
  ![HomepageUser](Screenshots/User_Front_Page.png)
 
- For full website Screenshots , [Visit Here](Screenshots/Readme.md)
+### For full website Screenshots , [Visit Here](Screenshots/Readme.md)
 
 ## Video
 
@@ -62,7 +62,7 @@ CLOUDINARY_CLOUD_NAME=Your_Cloudinary_Name
 CLOUDINARY_API_KEY=Your_Cloudinary_API_Key
 CLOUDINARY_API_SECRET=Your_Cloudinary_Secret_Key
 ```
-### Run Project
+### 3. Run Project
 #### Frontend
 ```bash
 cd frontend
