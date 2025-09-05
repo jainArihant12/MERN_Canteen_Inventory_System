@@ -1,6 +1,6 @@
 # Project Screenshots
 
-## User Layout (After Login as User)
+## 1. User Layout (After Login as User)
 
  ### Home Page
  <img src="User_Front_Page.png" width="900">
@@ -19,22 +19,28 @@
 |-----------|------------|
 | ![Add_Address](AddressesForm.png) | ![Edit_Address](AddressEDIT.png) |
 
-## Admin Layout (After Login as Admin)
+## 2. Admin Layout (After Login as Admin)
 
 ### Admin Dashboard
-<img src="UserOrderStatus.png" alt="Menu Image" width="900">
+<img src="AdminDashboard.png" alt="Menu Image" width="900">
 
 ### Admin CRUD Food items
-<img src="UserOrderStatus.png" alt="Menu Image" width="900">
+
+| Admin Product CRUD  | Adding product |
+|-----------|------------|
+| ![AdminProduct](adminCRUD.png) | ![Adding Product](Admin_Adding_Product.png) |
+
 
 ### Admin Control of Order List
-<img src="UserOrderStatus.png" alt="Menu Image" width="900">
+<img src="AdminOrderList.png" alt="Menu Image" width="900">
 
-## Login/Register
+
+## 3. Login/Register
 
 | Register Page | Login Page |
 |-----------|------------|
 | ![Register](register.png) | ![Login](login.png) |
+
 
 
 
