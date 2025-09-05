@@ -5,7 +5,7 @@ A web-based application for managing a canteen, built with the MERN stack (Mongo
 It allows admins to manage products and users to place orders efficiently.
 
 ## Screenshots
- ![HomepageUser](Screenshots/User_Front_Page)
+ ![HomepageUser](Screenshots/User_Front_Page.png)
 
 ## Features
 - User Authentication (Sign up / Login)
