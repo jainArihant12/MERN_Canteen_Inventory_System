@@ -4,4 +4,5 @@
 
 | Register Page | Login Page |
 |-----------|------------|
-| ![Register](Screenshots/register.png) | ![Login](Screenshots/login.png) |
+| ![Register](register.png) | ![Login](login.png) |
+
