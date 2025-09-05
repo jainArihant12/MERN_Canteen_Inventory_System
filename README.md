@@ -26,5 +26,50 @@ It allows admins to manage products and users to place orders efficiently.
 ## Tech Stack
 - Frontend: React.js, HTML, CSS, JavaScript
 - Backend: Node.js, Express.js
-- Database: MongoDB
+- Database: MongoDB , Mongo Atlas
 - Authentication: JWT
+- Photo Storage: Cloudinary
+
+## Project SetUp 
+
+### 1. Clone the repository  
+```bash
+git clone https://github.com/jainArihant12/MERN_Canteen_Inventory_System.git
+cd your-repo
+```
+
+### 2. Install dependencies
+#### For Frontend
+```bash
+cd frontend
+npm install
+```
+- Create .env file inside frontend folder
+```bash
+VITE_BACKEND_API_URL = Your own Backend Url
+```
+#### For Backend
+```
+cd server
+npm install
+```
+- Create .env file inside server folder
+```bash
+MONGO_URI=Your_MongoDB_URL
+PORT=Your_Port
+FRONTEND_URL=Your_Frontend_URL
+CLOUDINARY_CLOUD_NAME=Your_Cloudinary_Name
+CLOUDINARY_API_KEY=Your_Cloudinary_API_Key
+CLOUDINARY_API_SECRET=Your_Cloudinary_Secret_Key
+```
+### Run Project
+#### Frontend
+```bash
+cd frontend
+npm run dev
+```
+#### Backend
+```
+cd server
+npx nodemon server
+```
