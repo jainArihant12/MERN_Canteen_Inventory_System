@@ -4,6 +4,9 @@ A canteen webapp where admin can CRUD food items and manage order of user and Us
 A web-based application for managing a canteen, built with the MERN stack (MongoDB, Express.js, React.js, Node.js).  
 It allows admins to manage products and users to place orders efficiently.
 
+## Screenshots
+ ![HomepageUser](Screenshots/User_Front_Page.png)
+
 ## Features
 - User Authentication (Sign up / Login)
 - Admin Panel
