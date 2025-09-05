@@ -144,9 +144,9 @@ const Listingpage = () => {
         {/* Header: Title + Sort */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <h2 className="text-2xl font-bold">All Products</h2>
+            <h2 className="text-2xl font-bold">All Food Items</h2>
             <span className="text-sm text-gray-600">
-              {productList.length} <h4 className="inline">Products</h4>
+              {productList.length} <h4 className="inline">Foods items</h4>
             </span>
           </div>
           <DropdownMenu>
